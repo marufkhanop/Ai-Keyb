@@ -65,7 +65,7 @@ public class AIKeyboardService extends InputMethodService {
 
     private static final String[] SYM2_R1 = {"~", "`", "|", "•", "√", "π", "÷", "×", "{", "}"};
     private static final String[] SYM2_R2 = {"£", "¥", "€", "¢", "^", "°", "=", "{", "}"};
-    private static final String[] SYM2_R3 = {"\", "<", ">", "[", "]", "©", "®"};
+    private static final String[] SYM2_R3 = {"\\\\", "<", ">", "[", "]", "©", "®"};
 
     @Override
     public View onCreateInputView() {
@@ -495,7 +495,7 @@ public class AIKeyboardService extends InputMethodService {
         } else if (deckMode == 1) {
             keysDeck.addView(createSimpleRow(SYM1_R1, h));
             keysDeck.addView(createSimpleRow(SYM1_R2, h));
-            keysDeck.addView(createSymbolShiftRow(SYM1_R3, "=\<", h));
+            keysDeck.addView(createSymbolShiftRow(SYM1_R3, "= <", h));
             keysDeck.addView(createBottomBar(h));
         } else {
             keysDeck.addView(createSimpleRow(SYM2_R1, h));
